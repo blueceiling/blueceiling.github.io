@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: system-ui, sans-serif;
+	background: white;
+}
+
+/* TOP MENU */
+.menu {
+	display: flex;
+	gap: 40px;
+	margin-bottom: 60px;
+}
+
+.menu a img {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+/* wallet */
+.wallet {
+	position: relative;
+	width: 600px;
+	max-width: 90vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wallet img.namecard {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* arrows */
+.arrow {
+	position: absolute;
+	font-size: 48px;
+	text-decoration: none;
+	color: black;
+	top: 50%;
+	transform: translateY(-50%);
+	user-select: none;
+}
+
+.arrow.left {
+	left: -60px;
+}
+
+.arrow.right {
+	right: -60px;
+}
+
+/* hide arrows when not needed */
+.arrow.hidden {
+	display: none;
+}
