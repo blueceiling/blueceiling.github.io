@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "pencilwrote";
+	src: url("pencil_wrote.otf");
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -81,4 +86,12 @@ body {
 /* hide arrows when not needed */
 .arrow.hidden {
 	display: none;
+}
+
+.test {
+	font-family: "pencilwrote";
+	font-size: 50px;
+	color: #939395;
+	margin-top: 150px;
+	text-align: center;
 }
