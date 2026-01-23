@@ -6,35 +6,46 @@
 
 body {
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	font-family: system-ui, sans-serif;
 	background: white;
 }
 
 /* TOP MENU */
 .menu {
-	display: flex;
+	position: absolute;
+	top: env(safe-area-inset-top, 20px);
+	left: 50%;
+	transform: translateX(-50%);
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
 	gap: 40px;
-	margin-bottom: 60px;
 }
 
 .menu a img {
-	width: 32px;
-	height: 32px;
+	margin-top: 16px;
+	padding: 8px 0;
+	width: 100px;
+	height: 100px;
 	cursor: pointer;
+}
+
+.menu-item {
+	width: 150px;
+	height: 100px;
+}
+.menu-item.spacer {
+	visibility: hidden;
 }
 
 /* wallet */
 .wallet {
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 600px;
 	max-width: 90vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 0 90px;
 }
 
 .wallet img.namecard {
@@ -54,12 +65,17 @@ body {
 	user-select: none;
 }
 
+.arrow img {
+	width: 40px;
+	height: auto;
+}
+
 .arrow.left {
-	left: -60px;
+	left: 0;
 }
 
 .arrow.right {
-	right: -60px;
+	right: 0;
 }
 
 /* hide arrows when not needed */
