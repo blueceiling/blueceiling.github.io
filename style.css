@@ -10,10 +10,15 @@
 }
 
 body {
+	margin: 0;
+	padding: 0;
+	display: flex;
 	height: 100vh;
 	font-family: system-ui, sans-serif;
 	background: white;
+	cursor: pointer;
 }
+
 
 /* TOP MENU */
 .menu {
@@ -25,7 +30,6 @@ body {
 	grid-template-columns: repeat(3, 100px);
 	gap: 70px;
 }
-
 .menu a img {
 	margin-top: 16px;
 	padding: 5px 0;
@@ -36,49 +40,27 @@ body {
 
 /* wallet */
 .wallet {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 600px;
-	max-width: 90vw;
-	padding: 0 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
 }
-
-.wallet img.namecard {
+.wallet-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25vw;
+	height: 45vh;
+}
+.wallet-wrapper img {
 	width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* arrows */
-.arrow {
-	position: absolute;
-	font-size: 48px;
-	text-decoration: none;
-	color: black;
-	top: 50%;
-	transform: translateY(-50%);
+	height: 100%;
+	object-fit: contain;
 	user-select: none;
+	pointer-events: none;
 }
 
-.arrow img {
-	width: 40px;
-	height: auto;
-}
-
-.arrow.left {
-	left: 0;
-}
-
-.arrow.right {
-	right: 0;
-}
-
-/* hide arrows when not needed */
-.arrow.hidden {
-	display: none;
-}
 
 .test {
 	font-family: "pencilwrote";
