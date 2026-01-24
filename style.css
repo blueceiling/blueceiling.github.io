@@ -3,10 +3,10 @@
 	src: url("pencil_wrote.otf");
 }
 
-* {
-	box-sizing: border-box;
+html, body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 body {
@@ -22,13 +22,21 @@ body {
 
 /* TOP MENU */
 .menu {
-	position: absolute;
+	position: fixed;
 	top: env(safe-area-inset-top, 20px);
+
 	left: 50%;
 	transform: translateX(-50%);
+
 	display: grid;
 	grid-template-columns: repeat(3, 100px);
 	gap: 70px;
+}
+/* for safari */
+@supports (-webkit-touch-callout: none) {
+	.menu {
+		transform: translateX(-50%) translateZ(0);
+	}
 }
 .menu a img {
 	margin-top: 16px;
@@ -43,17 +51,21 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	width: 100vw;
 	height: 100vh;
+	height: 100svh;
 }
 .wallet-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 25vw;
-	height: 45vh;
+
+	width: 70vw;
+	height: 50svh;
 }
 .wallet-wrapper img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
