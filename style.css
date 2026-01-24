@@ -19,6 +19,12 @@ body {
 	cursor: pointer;
 }
 
+@media (max-width: 768px) {
+	.menu {
+		grid-template-columns: repeat(3, 120px);
+		gap: 16px;
+	}
+}
 
 /* TOP MENU */
 .menu {
