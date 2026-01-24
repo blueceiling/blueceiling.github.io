@@ -20,6 +20,9 @@ body {
 }
 
 @media (max-width: 768px) {
+	body {
+		background-color: #000;
+	}
 	.menu {
 		grid-template-columns: repeat(3, 120px);
 		gap: 16px;
@@ -42,12 +45,6 @@ body {
 	grid-template-columns: repeat(3, 100px);
 	gap: 70px;
 }
-/* for safari */
-@supports (-webkit-touch-callout: none) {
-	.menu {
-		transform: translateX(-50%) translateZ(0);
-	}
-}
 .menu a img {
 	margin-top: 16px;
 	padding: 5px 0;
@@ -55,6 +52,13 @@ body {
 	height: 100px;
 	cursor: pointer;
 }
+/* for safari */
+@supports (-webkit-touch-callout: none) {
+	.menu {
+		transform: translateX(-50%) translateZ(0);
+	}
+}
+
 
 /* wallet */
 .wallet {
@@ -84,7 +88,11 @@ body {
 }
 
 
-.test {
+.daily {
+	padding-top: 20px;
+	width: 80vw;
+}
+.daily p {
 	font-family: "pencilwrote";
 	font-size: 50px;
 	color: #939395;
