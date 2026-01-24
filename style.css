@@ -19,20 +19,6 @@ body {
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
-	body {
-		background-color: #000;
-	}
-	.menu {
-		grid-template-columns: repeat(3, 120px);
-		gap: 16px;
-	}
-	.test {
-		font-size: 75px;
-	}
-
-}
-
 /* TOP MENU */
 .menu {
 	position: fixed;
@@ -52,6 +38,21 @@ body {
 	height: 100px;
 	cursor: pointer;
 }
+
+@media (max-width: 768px) {
+	body {
+		background-color: #000;
+	}
+	.menu {
+		grid-template-columns: repeat(3, 120px);
+		gap: 16px;
+	}
+	.test {
+		font-size: 75px;
+	}
+
+}
+
 /* for safari */
 @supports (-webkit-touch-callout: none) {
 	.menu {
