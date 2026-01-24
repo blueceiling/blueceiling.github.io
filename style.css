@@ -28,8 +28,8 @@ body {
 	transform: translateX(-50%);
 
 	display: grid;
-	grid-template-columns: repeat(3, 100px);
-	gap: 70px;
+	grid-template-columns: repeat(3, minmax(70px, 100px));
+	gap: 50px;
 }
 .menu a img {
 	margin-top: 16px;
@@ -37,20 +37,6 @@ body {
 	width: 100px;
 	height: 100px;
 	cursor: pointer;
-}
-
-@media (max-width: 768px) {
-	body {
-		background-color: #000;
-	}
-	.menu {
-		grid-template-columns: repeat(3, 120px);
-		gap: 16px;
-	}
-	.test {
-		font-size: 75px;
-	}
-
 }
 
 /* for safari */
@@ -68,16 +54,18 @@ body {
 	align-items: center;
 
 	width: 100vw;
-	height: 100vh;
 	height: 100svh;
+	padding-top: env(safe-area-inset-top, 60px);
+	padding-bottom: env(safe-area-inset-top, 60px);
+	box-sizing: border-box;
 }
 .wallet-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	width: 70vw;
-	height: 50svh;
+	width: 60vw; 
+	height: 45svh;
 }
 .wallet-wrapper img {
 	display: block;
@@ -99,4 +87,21 @@ body {
 	color: #939395;
 	margin-top: 150px;
 	text-align: center;
+}
+
+.privacy {
+	position: fixed;
+	bottom: env(safe-area-inset-bottom, 20px);
+	padding-bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	pointer-events: none;
+}
+.privacy p {
+	margin: 0;
+	font-size: 35px;
+	font-family: "pencilwrote";
+	color: #939395;
 }
