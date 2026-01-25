@@ -1,6 +1,7 @@
 const images = [
 	"images/namecards/card1.png",
-	"images/namecards/card2.png"
+	"images/namecards/card2.png",
+	"images/namecards/card3.png"
 ];
 
 let currentIndex = 0;
