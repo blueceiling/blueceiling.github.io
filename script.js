@@ -15,7 +15,7 @@ const images = [
 	{
 		image: "images/namecards/card3.png",
 		texts: [
-			"new yorker (not)",
+			"new yorker not true",
 			"love nyc tho",
 			"im testing so do not read"
 		]

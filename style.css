@@ -51,12 +51,13 @@ body {
 	.menu a img {
 		max-width: 80px;
 	}
-	.wallet-row {
+	.row {
+		align-items: center;
 		flex-direction: column;
 		gap: 24px;
+		padding-top: 80px;
 	}
-	.taste p {
-		text-align: center;
+	.expl {
 	}
 }
 /* for safari */
@@ -67,15 +68,14 @@ body {
 }
 
 
-/* wallet */
+
 .row {
 	display: flex;
-	align-items: flex-start;
 	justify-content: space-between;
 
 	width: 100%;
-	padding: 140px 8vw 0; /* top | left-right | bottom */
-	box-sizing: border;
+	padding: 240px 8vw 0; /* top | left-right | bottom */
+
 }
 .wallet {
 	display: flex;
@@ -107,6 +107,7 @@ body {
 .expl {
 	max-width: 400px;
 	width: 100%;
+	align-items: flex-start;
 
 	margin-right: 15vw;
 }
@@ -142,4 +143,10 @@ body {
 	font-size: 35px;
 	font-family: "pencilwrote";
 	color: #939395;
+}
+
+/* remove blue tap highlight on upon clicks */
+a, button, img, body {
+	-webkit-tap-highlight-color: transparent; /* safari/ios */
+	tap-highlight-color: transparent;
 }
