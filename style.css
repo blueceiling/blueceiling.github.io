@@ -115,5 +115,11 @@ a, button, img, body {
 	.expl ol {
 		font-size: 35px;
 	}
+	.privacy {
+		padding-top: 90px;
+	}
+	.privacy p {
+		font-size: 22px;
+	}
 }
 
