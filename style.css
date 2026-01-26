@@ -112,11 +112,11 @@ a, button, img, body {
 		width: 80vw;
 		max-width: none;
 	}
-	.expl ol {
-		font-size: 35px;
+	main {
+		padding-bottom: 90px;
 	}
-	.privacy {
-		padding-top: 90px;
+	.expl ol {
+		font-size: 30px;
 	}
 	.privacy p {
 		font-size: 22px;
