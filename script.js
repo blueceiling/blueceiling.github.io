@@ -4,28 +4,16 @@ const images = [
 		texts: [
 			"Pangyo, Korea and Philly and CO",
 			"A human being"
-		]
+		],
+		link: null
 	},
 	{
 		image: "images/namecards/card1.png",
 		texts: [
-			"Pangyo, Korea, Philly, CO",
-			"A human being"
-		]
-	},
-	{
-		image: "images/namecards/card2.png",
-		texts: [
-			"hey"
-		]
-	},
-	{
-		image: "images/namecards/card3.png",
-		texts: [
-			"new yorker not true",
-			"love nyc tho",
-			"im testing so do not read"
-		]
+			"The Brutalist Theology magazine",
+			"minifigures ai produced"
+		],
+		link: "https://www.instagram.com/bruttheology/"
 	}
 ];
 
@@ -39,6 +27,9 @@ function updateCard(index) {
 
     // Update image
     mainImage.src = image.image;
+
+	// store link on the image element
+	mainImage.dataset.link = image.link || "";
 
     // Clear previous text
     textList.innerHTML = "";
@@ -54,6 +45,15 @@ function updateCard(index) {
 // Initial display
 updateCard(currentIndex);
 
+mainImage.addEventListener("click", (e) => {
+	e.stopPropagation(); // prevents body click
+
+	const link = mainImage.dataset.link;
+	if (!link) return; // no link → do nothing
+
+	window.location.href = link;
+});
+
 // disable clicks for first 3 seconds
 let clicksEnabled = false;
 setTimeout(() => {
@@ -62,6 +62,7 @@ setTimeout(() => {
 
 document.body.addEventListener("click", (e) => {
 	if(!clicksEnabled) return;
+	if (e.target === mainImage) return;
 
 	currentIndex = (currentIndex + 1) % images.length;
 	updateCard(currentIndex);
