@@ -1,5 +1,12 @@
 const images = [
 	{
+		image: "images/namecards/card0.png",
+		texts: [
+			"Pangyo, Korea and Philly and CO",
+			"A human being"
+		]
+	},
+	{
 		image: "images/namecards/card1.png",
 		texts: [
 			"Pangyo, Korea, Philly, CO",
