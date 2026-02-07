@@ -1,25 +1,16 @@
 const images = [
 	{
 		image: "images/namecards/card0.png",
-		texts: [
-			"Pangyo, Korea and Philly and CO",
-			"A human being"
-		],
 		link: null
 	},
 	{
 		image: "images/namecards/card1.png",
-		texts: [
-			"The Brutalist Theology magazine",
-			"minifigures ai produced"
-		],
 		link: "https://www.instagram.com/bruttheology/"
 	}
 ];
 
 let currentIndex = 0;
 const mainImage = document.getElementById("mainImage");
-const textList = document.getElementById("textList");
 
 // Function to update image + text
 function updateCard(index) {
@@ -31,15 +22,6 @@ function updateCard(index) {
 	// store link on the image element
 	mainImage.dataset.link = image.link || "";
 
-    // Clear previous text
-    textList.innerHTML = "";
-
-    // Add new list items
-    image.texts.forEach(text => {
-        const li = document.createElement("li");
-        li.textContent = text;
-        textList.appendChild(li);
-    });
 }
 
 // Initial display

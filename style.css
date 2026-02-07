@@ -55,30 +55,6 @@ body {
 	cursor: pointer;
 }
 
-.expl {
-	max-width: 400px;
-	width: 100%;
-	align-items: flex-start;
-
-	margin-right: 15vw;
-}
-.expl ol {
-	margin: 0;
-
-	font-size: 40px;
-	font-family: "pencilwrote";
-	line-height: 1.4;
-}
-.expl li {
-	margin-bottom: 8px;
-}
-.expl li::marker {
-	font-family: "Inter", sans-serif;
-	font-size: 10px;
-
-	vertical-align: middle;
-}
-
 .privacy {
 	position: fixed;
 	bottom: env(safe-area-inset-bottom, 20px);
@@ -115,12 +91,6 @@ a, button, img, body {
 	}
 	main {
 		padding-bottom: 90px;
-	}
-	.expl ol {
-		font-size: 30px;
-	}
-	.privacy p {
-		font-size: 22px;
 	}
 }
 
