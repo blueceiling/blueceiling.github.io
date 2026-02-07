@@ -19,14 +19,6 @@ body {
 	cursor: pointer;
 }
 
-.row {
-	display: flex;
-	justify-content: space-between;
-
-	width: 100%;
-	padding: 240px 8vw 0; /* top | left-right | bottom */
-
-}
 .wallet {
 	display: flex;
 	justify-content: center;
@@ -40,13 +32,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	width: 40vw;
 	max-width: 320px;
 	height: auto;
 }
 .wallet-wrapper img {
-	display: flex;
 	width: 100%;
 	height: auto;
 	user-select: none;
