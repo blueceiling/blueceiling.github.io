@@ -46,10 +46,9 @@ body {
 	height: auto;
 }
 .wallet-wrapper img {
-	display: block;
+	display: flex;
 	width: 100%;
 	height: auto;
-	object-fit: contain;
 	user-select: none;
 	pointer-events: auto;
 	cursor: pointer;
