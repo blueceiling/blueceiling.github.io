@@ -40,8 +40,8 @@ body {
 }
 .wallet-wrapper img {
 	display: block;
-	height: 100px;
-	width: 100%;
+	height: auto;
+	width: 80%;
 	user-select: none;
 	pointer-events: auto;
 	cursor: pointer;
@@ -80,6 +80,9 @@ a, button, img, body {
 	.wallet-wrapper {
 		width: 80vw;
 		max-width: none;
+	}
+	.wallet-wrapper img {
+		width: 55%;
 	}
 	main {
 		padding-bottom: 90px;
