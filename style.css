@@ -35,13 +35,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 40vw;
-	max-width: 320px;
+	max-width: 220px;
 	height: auto;
 }
 .wallet-wrapper img {
 	display: block;
+	height: 100px;
 	width: 100%;
-	height: auto;
 	user-select: none;
 	pointer-events: auto;
 	cursor: pointer;
