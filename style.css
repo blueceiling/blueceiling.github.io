@@ -10,6 +10,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	overflow: hidden;
 }
 body {
 	margin: 0;
@@ -78,7 +79,7 @@ a, button, img, body {
 		padding-top: 80px;
 	}
 	.wallet-wrapper {
-		width: 80vw;
+		width: 40vw;
 		max-width: none;
 	}
 	.wallet-wrapper img {
@@ -86,6 +87,9 @@ a, button, img, body {
 	}
 	main {
 		padding-bottom: 90px;
+	}
+	.privacy p {
+		font-size: 30px;
 	}
 }
 
