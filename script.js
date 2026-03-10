@@ -6,6 +6,10 @@ const images = [
 	{
 		image: "images/namecards/card1.png",
 		link: "https://www.instagram.com/bruttheology/"
+	},
+	{
+		image: "images/namecards/card2.png",
+		link: "https://youtu.be/hj0msQnP8L8?si=_uPLTEZa4j9J18OL"
 	}
 ];
 
