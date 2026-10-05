@@ -1,5 +1,9 @@
 const images = [
 	{
+		image: "images/namecards/postit.png",
+		link: null
+	},
+	{
 		image: "images/namecards/card0.png",
 		link: null
 	},
